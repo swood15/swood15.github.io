@@ -24,7 +24,7 @@
 
   <!-- <link rel="stylesheet" href="reset.css"> -->
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="alt_image_comp.js"></script>
+  <!-- <script type="text/javascript" src="alt_image_comp.js"></script> -->
 </head>
 
 <body>
@@ -38,7 +38,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="./home.html"><i class="glyphicon glyphicon-home"></i> &ensp;<b>LATITUDINOUS.</b></a>
+        <a class="navbar-brand" href="./index.html"><i class="glyphicon glyphicon-home"></i> &ensp;<b>LATITUDINOUS.</b></a>
       </div>
   
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,33 +62,26 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8">
         <main class="summ_container">
           <header>
-            <h3>PROJECT SUMMARY</h3>
+            <h3>LATITUDE VS WIND SPEED</h3>
             <hr>
-            <br>
           </header>
 
           <section id="summary">
-            <p>The purpose of this project was to investigate the relationship between latitude and various weather measurements, such as temperature, cloudiness, wind speed, and humidity. To accomplish this, I used Python and the OpenWeatherMap API to assemble a dataset of over 21,000 cities from around the globe.</p>
-            <p>Matplotlib and Tableau were used to visualize the data and search for potential correlations. This site provides the source data and visualizations that were generated throughout the analysis, as well as my own opinions as to possible explanations for obeserved trends and correlations.</p>
+            <p>An obvious correlation between latitude and wind speed does not appear to exist.</p>
             <br>
             <section> 
-              <div class="ba-slider">
-                <img src="./Resources/assets/images/MaxTempHeatmap.png" alt="">       
-                <div class="resize">
-                  <img src="./Resources/assets/images/AdjTempHeatmap.png" alt="">
-                </div>
-                <span class="handle"></span>
-              </div>
-              <h6>Drag the slider to the left to see a global heatmap of the raw temperature data for each city, or to the right to see tempeature data normalized to each city's elevation.</h6>
+              <a href="./humidity.html">
+                <img id="img" src="C:\Users\WOODS4\Documents\GitHub\WebViz_homework\Resources\assets\images\LatvsWind.png" alt="latvswind">
+              </a>
             </section>
           </section>
         </main>
-      </div>
+      </div>  
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <main class="viz_container">
           <header>
             <h3>VISUALIZATIONS</h3>

@@ -38,7 +38,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="./home.html"><i class="glyphicon glyphicon-home"></i> &ensp;<b>LATITUDINOUS.</b></a>
+        <a class="navbar-brand" href="./index.html"><i class="glyphicon glyphicon-home"></i> &ensp;<b>LATITUDINOUS.</b></a>
       </div>
   
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,33 +62,31 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8">
         <main class="summ_container">
           <header>
-            <h3>PROJECT SUMMARY</h3>
+            <h3>LATITUDE VS TEMPERATURE</h3>
             <hr>
-            <br>
           </header>
 
           <section id="summary">
-            <p>The purpose of this project was to investigate the relationship between latitude and various weather measurements, such as temperature, cloudiness, wind speed, and humidity. To accomplish this, I used Python and the OpenWeatherMap API to assemble a dataset of over 21,000 cities from around the globe.</p>
-            <p>Matplotlib and Tableau were used to visualize the data and search for potential correlations. This site provides the source data and visualizations that were generated throughout the analysis, as well as my own opinions as to possible explanations for obeserved trends and correlations.</p>
+            <p>As expected, there appears to be a significant relationship between latitude and temperature. Specifically, as one approaches the equator (latitude = 0) the temperature becomes warmer. Also of note is the fact that the southern hemisphere generally appears warmer than the northern hemisphere at the time the data were collected. This is likely due to the tilt of the Earth's axis. Fitting a second degree polynomial to the data gives a P value less than 0.0001 and R squared of ~55%. This indicates that while the correlation is indeed statistically significant, latitude by itself only accounts for just over half of the variation in temperature.</p>
             <br>
             <section> 
               <div class="ba-slider">
-                <img src="./Resources/assets/images/MaxTempHeatmap.png" alt="">       
+                <img src="./Resources/assets/images/LatvsTemp.png" alt="">       
                 <div class="resize">
-                  <img src="./Resources/assets/images/AdjTempHeatmap.png" alt="">
+                  <img src="./Resources/assets/images/LatvsAdjTemp.png" alt="">
                 </div>
                 <span class="handle"></span>
               </div>
-              <h6>Drag the slider to the left to see a global heatmap of the raw temperature data for each city, or to the right to see tempeature data normalized to each city's elevation.</h6>
             </section>
+            <p>One particular variable that could be influencing temperature is elevation. By normalizing temperatures with respect to the elevation of each city we can eliminate some of this variation and enhance the predictive capabilities of our model. The same coordinates that were used to obtain temperature data from the OpenWeatherMap API were passed to the Google Elevation API to obtain each city's elevation. The data were then normalized using a simple but generally agreed-upon rule of thumb: temperature decreases by approximately 3.5 deg F for each 1,000 ft increase in elevation. Plotting the results, it is apparent that the variation in temperature given latitude has decreased significantly. In fact, the R squared value jumped from about 55% to over 66%.</p>
           </section>
         </main>
-      </div>
+      </div>  
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <main class="viz_container">
           <header>
             <h3>VISUALIZATIONS</h3>

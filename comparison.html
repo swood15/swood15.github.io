@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>LATITUDINOUS.</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Get minified jquery core from https://code.jquery.com/ for dropdowns, must be placed before JavaScipt -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- link to grids -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html"><i class="glyphicon glyphicon-home"></i> &ensp;<b>LATITUDINOUS.</b></a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="./temp.html"><i class="glyphicon glyphicon-fire"></i> &ensp;Temperature</a></li>
+              <li><a href="./cloudiness.html"><i class="glyphicon glyphicon-cloud"></i> &ensp;Cloudiness</a></li>
+              <li><a href="./humidity.html"><i class="glyphicon glyphicon-tint"></i> &ensp;Humidity</a></li>
+              <li><a href="./windspeed.html"><i class="glyphicon glyphicon-leaf"></i> &ensp;Windspeed</a></li>
+            </ul>
+          </li> 
+          <li><a href="./comparison.html">Comparison</a></li>
+          <li><a href="./data.html">Data</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- <div class="container">
+    <div class="col-md-12">
+      <div>
+        <div>
+          <h2>Comparisons: Lattitude vs X</h2>
+          <hr>
+          <p class="comp_analysis">Click any plot to get an in depth analysis.</p>
+          <hr>
+          <div class="row" >
+            <br>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="max_temp.html"><img class = "img-fluid" src="Resources\Lat_vs_Temp.png" style="width:100%" alt="Max Temp"></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img-fluid" src="Resources\Lat_vs_Humidity.png" style="width:100%" alt="Humidity"></a></div>
+            <br>
+          </div>
+          <div class="row">
+            <br>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img-fluid" src="Resources\Lat_vs_cloud.png" style="width:100%" alt="Cloudindess"></a></div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="wind_speed.html"><img class = "img-fluid" src="Resources\Lat_vs_wind.png" style="width:100%" alt="wind speed"></a></div>
+            <br>
+          </div>
+        </div>
+      </div> -->
+
+  <main class="comp_container">
+    <header>
+      <h3>COMPARISON: WEATHER RESPONSES</h3>
+      <hr>
+      <p>Click any plot below to get an in-depth analysis.</p>
+    </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <section>
+              <h5>LATITUDE VS TEMPERATURE</h5>
+              <a href="./temp.html">
+                <img id="comp_img" src="C:\Users\WOODS4\Documents\GitHub\WebViz_homework\Resources\assets\images\LatvsTemp.png" alt="latvstemp">
+              </a>
+            </section>
+          </div>
+
+          <div class="col-md-6">
+            <section>
+              <h5>LATITUDE VS CLOUDINESS</h5>
+              <a href="./cloudiness.html">
+                <img id="comp_img" src="C:\Users\WOODS4\Documents\GitHub\WebViz_homework\Resources\assets\images\LatvsCloud.png" alt="latvscloud">
+              </a>
+            </section>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <section>
+              <h5>LATITUDE VS HUMIDITY</h5>
+              <a href="./humidity.html">
+                <img id="comp_img" src="C:\Users\WOODS4\Documents\GitHub\WebViz_homework\Resources\assets\images\LatvsHum.png" alt="latvshum">
+              </a>
+            </section>
+          </div>
+
+          <div class="col-md-6">
+            <section>
+              <h5>LATITUDE VS WIND SPEED</h5>
+              <a href="./windspeed.html">
+                <img id="comp_img" src="C:\Users\WOODS4\Documents\GitHub\WebViz_homework\Resources\assets\images\LatvsWind.png" alt="latvswind">
+              </a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
